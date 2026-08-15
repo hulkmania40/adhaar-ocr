@@ -139,17 +139,17 @@ async def extract_aadhaar(
         "data": extract_aadhaar_data(contents)
     }
 
-# if __name__ == "__main__":
-#     import uvicorn
-#     print("\n" + "="*60)
-#     print("🚀 Starting Aadhaar Extractor Server...")
-#     print("="*60)
-#     print(f"🤖 Using model: {MODEL_NAME}")
-#     print(f"🔑 API Key loaded: {'✅ Yes' if GEMINI_API_KEY else '❌ No'}")
-#     print("📍 Server will run at: http://localhost:8000")
-#     print("📚 API Documentation: http://localhost:8000/docs")
-#     print("🔍 Health Check: http://localhost:8000/health")
-#     print("📋 List Models: http://localhost:8000/available-models")
-#     print("="*60)
-#     print("\nPress Ctrl+C to stop the server\n")
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    import uvicorn
+    print("\n" + "="*60)
+    print("🚀 Starting Aadhaar Extractor Server...")
+    print("="*60)
+    print(f"🤖 Using model: {MODEL_NAME}")
+    print(f"🔑 API Key loaded: {'✅ Yes' if GEMINI_API_KEY else '❌ No'}")
+    print("📍 Server will run at: http://localhost:8000")
+    print("📚 API Documentation: http://localhost:8000/docs")
+    print("🔍 Health Check: http://localhost:8000/health")
+    print("📋 List Models: http://localhost:8000/available-models")
+    print("="*60)
+    print("\nPress Ctrl+C to stop the server\n")
+    uvicorn.run(app, host="0.0.0.0", port=8000)
