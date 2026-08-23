@@ -4,3 +4,4 @@ python-multipart==0.0.20
 google-genai
 Pillow==11.1.0
 python-dotenv==1.0.1
+pypdf==5.4.0
